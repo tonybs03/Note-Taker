@@ -6,7 +6,7 @@
 ## Description
 This is my first attempt at making a Note Taker application using front-end back-end connections with express.
 
-![This is an image](SS.png)
+![This is an image](ss.png)
 
 ## Table of Contents
 - [Installation](#installation)
