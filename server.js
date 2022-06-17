@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3001;
 
 
 // Providing access to the static html files nested in the public folder
-app.use(express.static('public'));
+app.use(express.static("public"));
 
 
 // Middleware for parsing JSON and urlencoded form data
@@ -20,11 +20,11 @@ app.use(express.json());
 
 
 // Creating the API and HTML routes for express usage
-const HTMLroutes = require("./routes/API_routes");
-app.use(HTMLroutes);
-
-const APIroutes = require("./routes/API_routes");
+const APIroutes = require("./routes/APIroutes.js");
 app.use(APIroutes);
+
+const HTMLroutes = require("./routes/HTMLroutes.js");
+app.use(HTMLroutes);
 
 
 // Initiating the listener at the localhost with the assigned PORT number
